@@ -1,0 +1,12 @@
+{
+  "l_car": 2.26,
+  "w_car": 0.9085,
+  "L": 2.68,
+  "a_lat_max": 1.6,
+  "a_long_max": 1.6,
+  "delta_max": 0.6,
+  "w_road": 1.25,
+  "heading_max": 0.2,
+  "velo_max": 35,
+  "kappa_max": 0.0035
+}
