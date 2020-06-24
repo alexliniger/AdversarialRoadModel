@@ -5,7 +5,7 @@ This is a C++ implementation of the discriminating kernel algorithm used to comp
 
 To install all the dependencies run
 ```
-./install.sh
+bash install.sh
 ```
 this clones `nlohmann/json`, and `eigen`, from their git repo, and saves them in a folder External. 
 
