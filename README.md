@@ -15,3 +15,7 @@ In this setting, the largest safe set is equivalent to the discriminating kernel
 ## Code
 
 In this repo, you can find a C++ implementation that computes the discriminating kernel using a discrete space discriminating kernel algorithm as presented in the paper. But you can also compute the robust control invariant set. Additionally we also included a PyTorch implementation that learns the safe set from the several discrete space discriminating kernels computed for different "maximum curvatures". The resulting network is able to interpolate over a large range of "maximum curvatures" using a small multi-layer perceptron that can be included in an MPC as a terminal constraint.
+
+<img src="https://github.com/alexliniger/AdversarialRoadModel/blob/master/Images/Disc285.png" width="700" />
+
+Visualization of the discriminating kernel, left neural network apporximiation, and right discrete space discriminating kernel, for a test set example where the "maximum curvatures" is 0.0035 1/m.
