@@ -27,10 +27,11 @@ int main() {
     Grid<bool> grid(road,car);
 
     Algo algo;
-//    algo.runRobustAlgo(model,&grid);
+   // algo.runRobustAlgo(model,&grid);
     algo.runDiscAlgo(model,&grid);
 
-    grid.saveGrid("Disc-Test",road.kappa_max);
+    grid.saveGrid("Disc",road.kappa_max);
+    // grid.saveGrid("Disc-Test",road.kappa_max);
 
     return 0;
 }

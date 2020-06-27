@@ -1,0 +1,28 @@
+{
+  "path": "Data",
+  "seed": 1,
+  "NGD":101,
+  "NGMU": 81,
+  "NGV": 135,
+  "NGKAPPA": 13,
+
+  "NGD_T":201,
+  "NGMU_T": 161,
+  "NGV_T": 270,
+  "NGKAPPA_T": 2,
+
+
+  "n_batch": 1500,
+  "train_val_ratio": 0.95,
+  "n_neurons": 16,
+  "n_states": 4,
+
+  "epochs": 9,
+  "lr": 0.01,
+
+  "cut_off": 0.25,
+
+  "load_data": false,
+  "load_model": false,
+  "activation": "ELU"
+}

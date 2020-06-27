@@ -8,5 +8,5 @@
   "w_road": 1.25,
   "heading_max": 0.2,
   "velo_max": 35,
-  "kappa_max": 0.0035
+  "kappa_max": 0.001
 }

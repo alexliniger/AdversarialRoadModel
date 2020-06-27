@@ -17,6 +17,6 @@
 for i in 0.1 0.05 0.04 0.03 0.02 0.01 0.005 0.004 0.003 0.002 0.0015 0.00125 0.001
 do
   echo "Running Disc Kernel Algo for kappa_max = $i"
-  ./jq-linux64 '.kappa_max = $newVal' --argjson newVal $i Model/car.json > tmp.$$.json && mv tmp.$$.json Model/car.json
+  jq '.kappa_max = $newVal' --argjson newVal $i car.json > tmp.$$.json && mv tmp.$$.json car.json
   ./DiscKernelAlgo
 done
