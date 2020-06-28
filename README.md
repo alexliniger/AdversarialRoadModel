@@ -6,6 +6,8 @@ In our RSS 2020 paper "Safe Motion Planning for Autonomous Driving using an Adve
 
 In this paper, we propose to treat the road after the prediction horizon as an adversarial player, and we establish safe sets, for which we can show that whatever the adversarial road looks like we can follow the road while staying safely inside. 
 
+<img src="https://github.com/alexliniger/AdversarialRoadModel/blob/master/Images/AdverseRoad.png" width="800" />
+
 We formalize this idea by using a kinematic bicycle model in curvilinear coordinates and considering the road curvature as an adversarial player
 
 ## Discriminating Kernel
@@ -16,6 +18,6 @@ In this setting, the largest safe set is equivalent to the discriminating kernel
 
 In this repo, you can find a C++ implementation that computes the discriminating kernel using a discrete space discriminating kernel algorithm as presented in the paper. But you can also compute the robust control invariant set. Additionally we also included a PyTorch implementation that learns the safe set from the several discrete space discriminating kernels computed for different "maximum curvatures". The resulting network is able to interpolate over a large range of "maximum curvatures" using a small multi-layer perceptron that can be included in an MPC as a terminal constraint.
 
-<img src="https://github.com/alexliniger/AdversarialRoadModel/blob/master/Images/Disc285.png" width="700" />
+<img src="https://github.com/alexliniger/AdversarialRoadModel/blob/master/Images/Disc285.png" width="800" />
 
 Visualization of the discriminating kernel, left neural network apporximiation, and right discrete space discriminating kernel, for a test set example where the "maximum curvatures" is 0.0035 1/m.
